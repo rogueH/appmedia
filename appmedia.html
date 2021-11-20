@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="appmedia.css" rel="stylesheet" media="all" />
+        <title>MediaPost | Tes médias préférées au même endroit</title>
+
+        <style>
+            body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    height: 100%;
+    width: 96%;   
+}
+
+.info{
+    text-align: center;
+    background-color: rgba(66, 66, 173, 0.116);
+    padding: 20px;
+}
+
+#bordure{
+    border-style: dashed;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    text-align: center;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-size: 17px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+li{
+    margin: 5px;
+}
+img {
+    width: 100%;
+    height: auto;
+   
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ #tataki, #tapmedia, #tph {
+    display: none;
+}
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <img src="media.png" alt="photo tournage">
+        </div>
+
+        <div id="bordure">
+            <h1>MediaPost</h1>
+            <p>Choisis ton média maintenant !</p>
+
+
+
+
+
+            <div class="flex-container">
+                <ul>
+                    <li>tataki </li>
+                    <li>theprocesshouse</li>
+                    <li>tapmedia </li>
+                </ul>
+                <ul>
+                    <li><button onclick="show1()">En savoir plus</button></li>
+                    <li><button onclick="show2()">En savoir plus</button></li>
+                    <li><button onclick="show3()">En savoir plus</button></li>
+                </ul>
+            </div>
+            
+
+
+        </div>
+        <div class="info" id="tataki">
+            <h1>tataki</h1>
+            <p>Un média suisse connu de tous et abordant une actualité riche et varié, tataki est sans doute le média plus gros média, 
+                visant un public jeune, de suisse.</p>
+            <p> > Retrouvez toutes leur actualité <a href="https://www.tataki.ch/">ici</a></p>
+        </div>
+        <div class="info" id="tph">
+            <h1>theprocesshouse</h1>
+            <p>Un média qui a vu le jour en avril 2020 et qui a pour but de promouvoir l'actualité genevoise dans les domaines du sport, 
+                de l'art et de l'entrepreunariat, au travers d'interview.</p>
+            <p> > Retrouvez toutes leur actualité <a href="https://theprocesshouse.ch/">ici</a></p>
+        </div>
+        <div class="info" id="tapmedia">
+            <h1>tapmedia</h1>
+            <p>Un média genevois dont le but et de promouvoir la culture rap. Un media en pleine essort et qui propose du contenu de qualité !</p>
+            <p> > Retrouvez toutes leur actualité <a href="https://www.instagram.com/tap_media/">ici</a></p>
+        </div>
+    </body>
+
+    <script>
+
+        var tataki = document.getElementById("tataki") ;
+        var tph = document.getElementById("tph");
+        var tapmedia = document.getElementById("tapmedia");
+
+        function show1(){
+            tataki.style.display = "block";
+            tph.style.display = "none";
+            tapmedia.style.display = "none";
+        }
+
+        function show2(){
+            tataki.style.display = "none";
+            tph.style.display = "block";
+            tapmedia.style.display = "none";
+        }
+
+        function show3(){
+            tataki.style.display = "none";
+            tph.style.display = "none";
+            tapmedia.style.display = "block";
+        }
+    </script>
+</html>
