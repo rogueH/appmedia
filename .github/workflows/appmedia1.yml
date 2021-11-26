@@ -22,8 +22,8 @@ jobs:
         name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: -u="${rogue1h}"
-          password: -p="${chomi23H}"
+          username: -u="${r}"
+          password: -p="${c}"
       -
         name: Build and push
         uses: docker/build-push-action@v2
